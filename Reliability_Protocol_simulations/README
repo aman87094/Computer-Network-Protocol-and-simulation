@@ -1,0 +1,28 @@
+Team Members : Aayush Patel ee21b003 & Aman Kumar ee21b013
+
+Files Included :
+1. sender.py     - takes 1 extra argument for protocol
+2. receiver.py   - takes 1 extra argument for Imange filename
+3. evaluate.sh   - run in bash 
+4. CS3205_A3.pdf - analysis for the observations
+5. HeatMaps Folder with output_SW.png, output_GBN.png, output_SR.png
+6. Spreadsheets Folder containing the values we got after running the script.
+
+For running Once:
+    Run sender.py with argument as the keyword for the protocol required.
+    ("SW","GBN","SR" -> self explanatory)
+    Run receiver.py with argument as the name of file(image) where the final image is to be stored. 
+
+For running with Bash:
+    The bash script is made such that we have to edit the protocol each time before running.
+    ("SW","GBN","SR" -> self explanatory)  
+    These keywords are needed to be changed and the script will run the sender and receiver codes 6*6=36 times for each value of latency and loss.
+
+
+Note:
+Some print statements are not commented in the receiver code so that we can see how the packets are sent and when re-transmitted.
+Comment out those print statements if as required. 
+
+Note:
+The bash is made such that it would apply tc netem on lo.
+This can be changed as required. Use the command ifconfig to get all options.
